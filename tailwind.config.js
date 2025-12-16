@@ -10,9 +10,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        softBlue: 'hsl(231, 69%, 60%)',
-        softRed: 'hsl(0, 94%, 66%)',
-        grayishBlue: 'hsl(229, 8%, 60%)',
+        softBlue: 'hsl(235, 70%, 60%)',
+        softRed: 'hsl(0, 95%, 40%)',
+        grayishBlue: 'hsl(230, 10%, 60%)',
         veryDarkBlue: 'hsl(229, 31%, 21%)',
       },
       fontFamily: {
