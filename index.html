@@ -13,7 +13,9 @@
     <title>Bookmark Website</title>
   </head>
   <body class="overflow-x-hidden">
-    <div class="w-full max-h-[120px] border-b-2 border-gray-100 border-opacity-30 shadow-md bg-gray-300">
+    <div
+      class="w-full max-h-[120px] border-b-2 border-gray-100 border-opacity-30 shadow-md bg-gray-300"
+    >
       <nav class="container relative mx-auto p-6">
         <!-- Flex Container For Nav Items -->
         <div class="flex items-center justify-between space-x-20 my-6">
@@ -25,40 +27,226 @@
           <div
             class="hidden items-center space-x-10 uppercase text-grayishBlue md:flex"
           >
-            <a href="#features" class="tracking-widest hover:text-softRed hover:scale-90 duration-200"
+            <a
+              href="#features"
+              class="tracking-widest hover:text-softRed hover:scale-90 duration-200"
               >Features</a
             >
-            <a href="#download" class="tracking-widest hover:text-softRed
-            hover:scale-90 duration-200"
+            <a
+              href="#download"
+              class="tracking-widest hover:text-softRed hover:scale-90 duration-200"
               >Download</a
             >
-            <a href="#faq" class="tracking-widest hover:text-softRed hover:scale-90 duration-200">FAQ</a>
-            <a href="" class="px-8 py-2 text-white bg-softRed border-2 border-softRed rounded-lg shadow-md hover:text-softRed hover:scale-90 hover:bg-white duration-200">Login</a>
+            <a
+              href="#faq"
+              class="tracking-widest hover:text-softRed hover:scale-90 duration-200"
+              >FAQ</a
+            >
+            <a
+              href=""
+              class="px-8 py-2 text-white bg-softRed border-2 border-softRed rounded-lg shadow-md hover:text-softRed hover:scale-90 hover:bg-white duration-200"
+              >Login</a
+            >
           </div>
         </div>
       </nav>
       <!-- Hero Section -->
-       <section id="hero">
+      <section id="hero">
         <!-- Container For Image & Content -->
-         <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0">
+        <div
+          class="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0"
+        >
           <!-- Content -->
-           <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
-            <h1 class="text-3xl font-semibold text-center lg:text-6xl lg:text-left">A Simple Bookmark Manager</h1>
-            <p class="max-w-md mx-auto text-lg text-center text-gray-400 lg:text-2xl lg:text-left lg:mt-0 lg:mx-0">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+          <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+            <h1
+              class="text-3xl font-semibold text-center lg:text-6xl lg:text-left"
+            >
+              A Simple Bookmark Manager
+            </h1>
+            <p
+              class="max-w-md mx-auto text-lg text-center text-gray-400 lg:text-2xl lg:text-left lg:mt-0 lg:mx-0"
+            >
+              A clean and simple interface to organize your favorite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
             <!-- Buttons Container -->
-             <div class="flex items-center justify-center w-full space-x-4 lg:justify-start">
-              <a href="#" class="py-4 px-6 text-sm font-semibold text-white bg-softBlue rounded-xl shadow-md border-2 border-softBlue md:text-base hover:bg-white hover:scale-90 hover:text-softBlue duration-300">Get it on Chrome</a>
-                <a href="#" class="py-4 px-6 text-sm font-semibold text-gray-500 bg-gray-300 rounded-xl shadow-md border-2 border-gray-300 md:text-base hover:bg-white hover:scale-90 hover:text-gray-500 duration-300">Get it on FireFox</a>
-             </div>
-           </div>
+            <div
+              class="flex items-center justify-center w-full space-x-4 lg:justify-start"
+            >
+              <a
+                href="#"
+                class="py-4 px-6 text-sm font-semibold text-white bg-softBlue rounded-xl shadow-md border-2 border-softBlue md:text-base hover:bg-white hover:scale-90 hover:text-softBlue duration-300"
+                >Get it on Chrome</a
+              >
+              <a
+                href="#"
+                class="py-4 px-6 text-sm font-semibold text-gray-500 bg-gray-300 rounded-xl shadow-md border-2 border-gray-300 md:text-base hover:bg-white hover:scale-90 hover:text-gray-500 duration-300"
+                >Get it on FireFox</a
+              >
+            </div>
+          </div>
           <!-- Image -->
-           <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+          <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
             <div class="bg-hero"></div>
-            <img src="images/illustration-hero.svg" alt="" class="relative z-10 lg:top-24 xltop-0 overflow-x-visible hover:scale-95 duration-300">
-           </div>
-
-         </div>
-       </section>
+            <img
+              src="images/illustration-hero.svg"
+              alt=""
+              class="relative z-10 lg:top-24 xltop-0 overflow-x-visible hover:scale-95 duration-300"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Features Heading -->
+      <section id="features">
+        <div class="container mx-auto mt-16 px-6">
+          <h2 class="mb-6 text-4xl font-semibold text-center">Features</h2>
+          <p class="max-w-md mx-auto text-center text-grayishBlue">
+            Our aim is to make it quick and easy for you to access your favorite
+            websites. Your bookmarks sync between your devices so you can access
+            them on the go.
+          </p>
+        </div>
+      </section>
+      <!-- Features Tabs -->
+      <section id="tabs">
+        <!-- Tabs/Panels Container -->
+        <div class="container relative mx-auto my-6 mb-32 mt-12 px-6">
+          <div class="bg-tabs"></div>
+          <!-- tabs flex Container -->
+          <div
+            class="flex flex-col justify-center max-w-xl mx-auto mb-6 border-b md:space-x-10 md:flex-row"
+          >
+            <!-- Tab 1 -->
+            <div
+              class="flex justify-center text-center text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+              data-target="panel-1"
+            >
+              <div class="py-5 border-b-4 border-softRed" data-target="panel-1">
+                <span>Simple Bookmarking</span>
+              </div>
+            </div>
+            <!-- Tab 2 -->
+            <div
+              class="flex justify-center text-center text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+              data-target="panel-2"
+            >
+              <div class="py-5" data-target="panel-2">
+                <span>Speedy Searching</span>
+              </div>
+            </div>
+            <!-- Tab 3 -->
+            <div
+              class="flex justify-center text-center text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+              data-target="panel-3"
+            >
+              <div class="py-5" data-target="panel-3">
+                <span>Easy Sharing</span>
+              </div>
+            </div>
+          </div>
+          <!-- Tab Panels -->
+          <section id="panels" class="container max-auto">
+            <!-- Panel 1 -->
+            <div
+              class="flex flex-col py-5 md:flex-row md:space-x-7 panel panel-1"
+            >
+              <!-- Panel Image -->
+              <div class="flex justify-center md:w-1/2">
+                <img
+                  src="images/illustration-features-tab-1.svg"
+                  alt=""
+                  class="relative z-10"
+                />
+              </div>
+              <!-- Panel Content -->
+              <div class="flex flex-col space-y-8 md:w-1/2">
+                <h3
+                  class="mt-32 text-3xl font-semibold text-center md:mt-0 md:text-left"
+                >
+                  Bookmark in one click
+                </h3>
+                <p class="max-w-md text-center text-grayishBlue md:text-left">
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favorite sites.
+                </p>
+                <div class="mx-auto md:mx-0">
+                  <a
+                    href="#"
+                    class="px-6 py-3 mt-4 text-sm font-semibold text-white bg-softBlue border-2 border-white rounded-lg shadow-md md:inline-flex hover:text-softBlue hover:scale-90 hover:bg-white hover:border-softBlue hover:border-2 duration-300"
+                    >More Info</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Panel 2 -->
+            <div
+              class="hidden flex flex-col py-5 md:flex-row md:space-x-7 panel panel-1"
+            >
+              <!-- Panel Image -->
+              <div class="flex justify-center md:w-1/2">
+                <img
+                  src="images/illustration-features-tab-2.svg"
+                  alt=""
+                  class="relative z-10"
+                />
+              </div>
+              <!-- Panel Content -->
+              <div class="flex flex-col space-y-8 md:w-1/2">
+                <h3
+                  class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left"
+                >
+                  Intelligent search
+                </h3>
+                <p class="max-w-md text-center text-grayishBlue md:text-left">
+                  Our powerful search feature will help you find saved sites in no
+                  time at all. No need to trawl through all of your bookmarks.
+                </p>
+                <div class="mx-auto md:mx-0">
+                  <a
+                    href="#"
+                    class="px-6 py-3 mt-4 text-sm font-semibold text-white bg-softBlue border-2 border-white rounded-lg shadow-md md:inline-flex hover:text-softBlue hover:scale-90 hover:bg-white hover:border-softBlue hover:border-2 duration-300"
+                    >More Info</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Panel 3 -->
+            <div
+              class="hidden flex flex-col py-5 md:flex-row md:space-x-7 panel panel-1"
+            >
+              <!-- Panel Image -->
+              <div class="flex justify-center md:w-1/2">
+                <img
+                  src="images/illustration-features-tab-3.svg"
+                  alt=""
+                  class="relative z-10"
+                />
+              </div>
+              <!-- Panel Content -->
+              <div class="flex flex-col space-y-8 md:w-1/2">
+                <h3
+                  class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left"
+                >
+                  Share your bookmarks
+                </h3>
+                <p class="max-w-md text-center text-grayishBlue md:text-left">
+                  Easily share your bookmarks and collections with others. Create
+                  a shareable link that you can send at the click of a button.
+                </p>
+                <div class="mx-auto md:mx-0">
+                  <a
+                    href="#"
+                    class="px-6 py-3 mt-4 text-sm font-semibold text-white bg-softBlue border-2 border-white rounded-lg shadow-md md:inline-flex hover:text-softBlue hover:scale-90 hover:bg-white hover:border-softBlue hover:border-2 duration-300"
+                    >More Info</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
     </div>
   </body>
 </html>
