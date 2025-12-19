@@ -3,6 +3,8 @@ const panels = document.querySelectorAll(".panel");
 const btn = document.getElementById("menu-btn");
 const menu = document.getElementById("menu");
 const logo = document.getElementById("logo");
+const controls = document.getElementById("nav-controls");
+
 
 // Tabs menu event listener
 tabs.forEach((tab) => tab.addEventListener("click", onTabClick));
@@ -34,23 +36,21 @@ function onTabClick(e) {
     .classList.remove("hidden");
 }
 
-function navToggle() {
-  const isOpen = btn.classList.toggle("open");
+function navToggle(){
+
+  const isOpen = controls.classList.toggle("open");
 
   menu.classList.toggle("flex", isOpen);
   menu.classList.toggle("hidden", !isOpen);
 
-  logo.setAttribute(
-    "src",
-    isOpen
-      ? "images/logo-bookmark-footer.svg"
-      : "images/logo-bookmark.svg"
-  );
+  logo.src = isOpen
+    ? "images/logo-bookmark-footer.svg"
+    : "images/logo-bookmark.svg";
 }
 
 // Close the mobile menu when a navigation link is clicked
 menu.addEventListener("click", () => {
-  btn.classList.remove("open");
+  controls.classList.remove("open");
   menu.classList.remove("flex");
   menu.classList.add("hidden");
   logo.setAttribute("src", "images/logo-bookmark.svg");
