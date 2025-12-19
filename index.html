@@ -49,6 +49,49 @@
               >Login</a
             >
           </div>
+          <!-- Hamburger Button -->
+          <button
+            id="menu-btn"
+            class="z-30 block hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div
+          id="menu"
+          class="fixed inset-0 z-20 hidden flex-col items-center self-end w-full h-full min-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 bg-veryDarkBlue bg-opacity-90"
+        >
+          <div class="w-full py-5 text-center">
+            <a
+              href="#features"
+              class="block hover:scale-110 hover:text-softRed duration-300"
+              >Features</a
+            >
+          </div>
+          <div class="w-full py-5 text-center">
+            <a
+              href="#download"
+              class="block hover:scale-110 hover:text-softRed duration-300"
+              >Download</a
+            >
+          </div>
+          <div class="w-full py-5 text-center">
+            <a
+              href="#faq"
+              class="block hover:scale-110 hover:text-softRed duration-300"
+              >FAQ</a
+            >
+          </div>
+          <div class="w-full py-5 text-center">
+            <a
+              href="#"
+              class="block hover:scale-110 hover:text-softRed duration-300"
+              >Login</a
+            >
+          </div>
         </div>
       </nav>
       <!-- Hero Section -->
@@ -623,7 +666,7 @@
       <!-- Newsletter Section -->
       <section id="newsletter" class="bg-softBlue">
         <!-- Main Container -->
-        <div class="max-w-lg mx-auto py-24">
+        <div class="max-w-lg mx-auto py-14 md:max-w-3xl">
           <p
             class="mb-6 text-lg tracking-widest text-center text-white uppercase"
           >
@@ -660,10 +703,10 @@
         </div>
       </section>
       <!-- Footer -->
-      <footer class="py-16 bg-veryDarkBlue">
+      <footer class="py-14 bg-veryDarkBlue">
         <!-- Footer Flex Container -->
         <div
-          class="container flex flex-col items-center justify-between mx-auto space-y-16 px-6 md:flex-row md:space-y-0"
+          class="container flex flex-col items-center justify-between mx-auto space-y-16 px-12 md:flex-row md:space-y-0"
         >
           <!-- Logo/Menu Container -->
           <div
@@ -677,21 +720,19 @@
               >Download</a
             >
             <a href="#faq" class="uppercase hover:text-softRed">FAQ</a>
-            
           </div>
           <!-- Social Container -->
-           <div class="flex space-x-10 ">
+          <div class="flex space-x-10">
             <a href="#">
               <img class="h-6 ficon" src="images/icon-facebook.svg" alt="" />
             </a>
             <a href="#">
               <img class="h-6 ficon" src="images/icon-twitter.svg" alt="" />
             </a>
-            
-           </div>
+          </div>
         </div>
       </footer>
-      <div class="px-5 h-5"></div>
+      <!-- <div class="px-5 h-5"></div> -->
       <!-- don't put anything after this div block! -->
     </div>
   </body>

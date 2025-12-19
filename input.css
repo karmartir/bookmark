@@ -19,5 +19,53 @@
 
 .ficon:hover {
   filter: invert(80%) sepia(70%) saturate(3803%) hue-rotate(350deg)
-    brightness(120%) contrast(96%)
+    brightness(120%) contrast(96%);
+}
+
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+  background: #000
+}
+.hamburger-bottom{
+  transform: translateY(14px);
+  background: #000
+}
+.open {
+  position: fixed;
+  top: 50px;
+  right: 45px;
+}
+.open .hamburger-top{
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+  background-color: #fff
+}
+.open .hamburger-middle{
+  display: none;
+}
+.open .hamburger-bottom{
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    background-color: #fff
 }
