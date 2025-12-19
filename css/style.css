@@ -1207,6 +1207,8 @@ video {
 }
 
 .open {
+  /* transform: rotate(90deg);
+  transform: translateY(0) */
   position: fixed;
   top: 50px;
   right: 45px;

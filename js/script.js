@@ -35,19 +35,23 @@ function onTabClick(e) {
 }
 
 function navToggle() {
-  btn.classList.toggle("open");
-  menu.classList.toggle("flex");
-  menu.classList.toggle("hidden");
-  if(menu.classList.contains('flex')){
-    logo.setAttribute('src', 'images/logo-bookmark-footer.svg');
-  } else {
-    logo.setAttribute('src', 'images/logo-bookmark.svg');
-  }
+  const isOpen = btn.classList.toggle("open");
+
+  menu.classList.toggle("flex", isOpen);
+  menu.classList.toggle("hidden", !isOpen);
+
+  logo.setAttribute(
+    "src",
+    isOpen
+      ? "images/logo-bookmark-footer.svg"
+      : "images/logo-bookmark.svg"
+  );
 }
 
 // Close the mobile menu when a navigation link is clicked
 menu.addEventListener("click", () => {
   btn.classList.remove("open");
+  menu.classList.remove("flex");
   menu.classList.add("hidden");
-  logo.classList.remove("hidden");
+  logo.setAttribute("src", "images/logo-bookmark.svg");
 });
